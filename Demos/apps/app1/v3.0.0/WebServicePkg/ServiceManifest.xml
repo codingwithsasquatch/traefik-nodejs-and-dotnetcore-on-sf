@@ -25,13 +25,13 @@
          </ExeHost>
       </EntryPoint>
       <EnvironmentVariables>
-        <EnvironmentVariable Name="NODE_PORT" Value="3000"/>
+        <EnvironmentVariable Name="NODE_PORT" Value=""/>
         <EnvironmentVariable Name="RES_STRING" Value="Hello World"/>
       </EnvironmentVariables>
    </CodePackage>
    <Resources>
       <Endpoints>
-         <Endpoint Name="NodeAppTypeEndpoint" Port="3000" UriScheme="http"/>
+         <Endpoint Name="NodeAppTypeEndpoint" Port="" UriScheme="http"/>
       </Endpoints>
    </Resources>
 </ServiceManifest>

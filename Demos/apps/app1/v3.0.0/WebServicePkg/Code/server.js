@@ -4,7 +4,7 @@ const PORT = process.env.NODE_PORT || 3000;
 const RESPONSE = process.env.Fabric_NodeName || process.env.RES_STRING;
 
 var server = http.createServer(function (req, res) {
-    var body = '<center><h1>Test:</h1><br /><h3 style="color:green;">' + Fabric_Folder_Application + '/' + RESPONSE + '</h3></center>';
+    var body = '<center><h1>Test:</h1><br /><h3 style="color:green;">' + process.env.Fabric_Folder_Application + '/' + RESPONSE + '</h3></center>';
     var content_length = body.length;
     res.writeHead(200, {
         'Content-Length': content_length,

@@ -1,5 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PublishProfile xmlns="http://schemas.microsoft.com/2015/05/fabrictools">
-  <ClusterConnectionParameters ConnectionEndpoint="" />
+  <ClusterConnectionParameters ConnectionEndpoint="sf-ldvsrfr7o4xn4.westus.cloudapp.azure.com:19000"
+    X509Credential="true"
+    ServerCertThumbprint="a576b7054a3b0d7ec15cbe58226875b9b4b0f86e"
+    FindType="FindByThumbprint"
+    FindValue="a576b7054a3b0d7ec15cbe58226875b9b4b0f86e"
+    StoreLocation="CurrentUser"
+    StoreName="My" />
   <ApplicationParameterFile Path="..\ApplicationParameters\Cloud.xml" />
 </PublishProfile>

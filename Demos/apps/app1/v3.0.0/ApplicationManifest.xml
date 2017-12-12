@@ -5,7 +5,7 @@
     <Parameter Name="Response" DefaultValue="Resp" />
   </Parameters>
   <ServiceManifestImport>
-    <ServiceManifestRef ServiceManifestName="WebServicePkg" ServiceManifestVersion="3.0.0" />
+    <ServiceManifestRef ServiceManifestName="WebServicePkg" ServiceManifestVersion="4.0.0" />
     <ConfigOverrides />
     <ResourceOverrides>
       <Endpoints>

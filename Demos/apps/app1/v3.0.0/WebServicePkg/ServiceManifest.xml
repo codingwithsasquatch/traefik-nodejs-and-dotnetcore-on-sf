@@ -5,7 +5,7 @@
       <Extensions>
           <Extension Name="Traefik">
             <Labels xmlns="http://schemas.microsoft.com/2015/03/fabact-no-schema">
-              <Label Key="traefik.frontend.rule.default">PathPrefixStrip: /customerA,/staging</Label>
+              <Label Key="traefik.frontend.rule.default">PathPrefixStrip: /NodeA,/staging</Label>
               <Label Key="traefik.frontend.priority">0</Label>
               <Label Key="traefik.backend.group.name">Canary</Label>
               <Label Key="traefik.backend.group.weight">0</Label>
@@ -15,7 +15,7 @@
       </Extensions>
       </StatelessServiceType>
    </ServiceTypes>
-   <CodePackage Name="code" Version="3.0.0">
+   <CodePackage Name="code" Version="4.0.0">
       <EntryPoint>
          <ExeHost>
             <Program>node.exe</Program>

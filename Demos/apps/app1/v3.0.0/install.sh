@@ -1,7 +1,9 @@
 #!/bin/bash
 
 # Select cluster
-sfctl cluster select --endpoint  https://sf-ldvsrfr7o4xn4.westus.cloudapp.azure.com:19080
+sfctl cluster select --endpoint  https://sf-ldvsrfr7o4xn4.westus.cloudapp.azure.com:19080 
+--key C:\Source\traefik\traefik-nodejs-and-dotnetcore-on-sf\Demos\apps\app1\v3.0.0\servicefabric.key 
+--cert C:\Source\traefik\traefik-nodejs-and-dotnetcore-on-sf\Demos\apps\app1\v3.0.0\servicefabric.crt
 
 # Upload the application files to the image store
 # (note the last folder name, Debug in this example)

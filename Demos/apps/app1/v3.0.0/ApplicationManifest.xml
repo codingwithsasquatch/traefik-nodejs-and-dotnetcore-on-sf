@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="NodeAppType" ApplicationTypeVersion="3.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="NodeAppType" ApplicationTypeVersion="4.0.1" xmlns="http://schemas.microsoft.com/2011/01/fabric">
    <Parameters>
     <Parameter Name="Port" DefaultValue="11270" />
     <Parameter Name="Response" DefaultValue="Resp" />
   </Parameters>
   <ServiceManifestImport>
-    <ServiceManifestRef ServiceManifestName="WebServicePkg" ServiceManifestVersion="4.0.0" />
+    <ServiceManifestRef ServiceManifestName="WebServicePkg" ServiceManifestVersion="4.0.1" />
     <ConfigOverrides />
     <ResourceOverrides>
       <Endpoints>
-        <Endpoint Name="NodeAppTypeEndpoint" Port="[Port]" />
+        <Endpoint Name="NodeAppTypeEndpoint" />
       </Endpoints>
     </ResourceOverrides>
     <EnvironmentOverrides CodePackageRef="Code">
